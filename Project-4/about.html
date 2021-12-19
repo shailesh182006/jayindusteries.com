@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Industry</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="icon" type="image/x-icon"
+  href="favicon.jpg"></link>
+
+  <style>
+      nav .fas{
+        display: none;
+    }
+    /*-----media----*/
+    @media(max-width: 700px){
+        .text-box h1{
+            font-size: 20px;
+          
+        }
+
+        .nav-links ul li{
+            display: block;
+        }
+
+        .nav-links{
+            position: absolute;
+            background: #f44336;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+
+        }
+
+        nav .fas{
+            display: block;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .nav-links ul{
+            padding: 30px;
+        }
+    }
+  </style>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+          
+            <ul>
+                <li> <a href="index.html">HOME</a></li>
+                <li> <a href="#">ABOUT</a></li>
+                <li> <a href="jobs.html">JOBS </a></li>                
+                <li> <a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+       <i class="fas fa-bars" onclick="showMenu()"></i>
+     
+    </nav>
+   <h1>About Us</h1>
+
+</section>
+
+<!---about us content-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We have the world's largest Industry </h1>
+            <p>Polyvinyl chloride is the world's third-most widely
+                 produced synthetic plastic polymer.
+                  About 40 million tons of PVC are produced each year.
+                   PVC comes in two basic forms: rigid and flexible.
+                    The rigid form of PVC is used in construction 
+                    for pipe and in profile applications such as doors and windows</p>
+
+                    <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+
+        </div>
+        
+        <div class="about-col">
+            <img src="about-pipe.jpg">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+<!------Footer------->
+<section class="footer">
+    <h4>About Us </h4>
+    <P>Polyvinyl chloride is the world's third-most widely
+        produced synthetic plastic polymer.<br>
+         About 40 million tons of PVC are produced each year.</P>
+
+         
+</section>
+
+
+<i class="fab fa-instagram"></i>
+         <i class="fab fa-facebook"></i>
+         <i class="fab fa-twitter"></i>
+         <i class="fab fa-youtube"></i>
+
+
+
+<!--Java Script-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
